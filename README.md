@@ -7,7 +7,7 @@ Wazuh Live Response (WLR) is a Python-based module that enhances Wazuh by integr
 - **custom-xdr** orchestrates the correlation and response modules, dynamically managing detection and response workflows.
 - **endpoint/** contains the executables that perform actions on Windows and Linux endpoints.
 
-## Usage
+## Setup
 To install Wazuh Live Response (WLR), initialize a Git repository inside the /var/ossec/integrations/ directory and pull the latest version. This method ensures that the module files are placed directly in the integrations folder rather than inside a subdirectory.
 ```sh
 cd /var/ossec/integrations/
@@ -22,6 +22,10 @@ cd /var/ossec/integrations/
 /var/ossec/framework/python/bin/pip3 install --upgrade pip
 /var/ossec/framework/python/bin/pip3 install -r requirements.txt
 ```
+
+## Usage
+### Repository wiki
+The complete documentation is available in the [wiki](https://github.com/lr2t9iz/wazuh-live-response/wiki/)
 
 # References
 - https://documentation.wazuh.com/current/user-manual/manager/integration-with-external-apis.html
