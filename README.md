@@ -6,9 +6,7 @@
 C-LiveResponse (C-LR) leverages Wazuh's architecture to execute remote actions on endpoints while providing a **modular system** for **automated correlation and response**, seamlessly integrating with external security solutions to enhance **threat detection and incident response**.
 
 ## Features
-- **Endpoint Isolation & Remote Command Execution (Shell).**
-- **External API Integration** – Allows interaction with external security solutions with Wazuh Integration.
-- **Auditing & Tracking** – Logs all actions for traceability.
+- **Endpoint Isolation**
 
 ## Planned Modules (To-Do)
 - ✅ **Windows Isolation**
