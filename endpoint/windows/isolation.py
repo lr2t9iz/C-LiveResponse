@@ -22,9 +22,9 @@ def debug(message):
 def output(input_program, action, by_user, result, stderr, log_h):
   cmd_result = {
     "command": "add",
-    "origin": { "name": "WLR", "module": "Isolation" },
+    "origin": { "name": "C-LR", "module": "Isolation" },
     "parameters": { "program": input_program },
-    "wlr": { 
+    "clr": { 
       "action": action,
       "user": by_user,
       "result": f"stdout: {result}\nstderr: {stderr}"
@@ -90,7 +90,7 @@ def main():
   try: 
     input_json = json.loads(input_str)
   except json.JSONDecodeError:
-    output("Isolation.WLR", "error", "system", "", "Invalid JSON input received.", f"{current_datetime} Isolation.WLR")
+    output("C-LR Isolation", "error", "system", "", "Invalid JSON input received.", f"{current_datetime} C-LR Isolation")
     sys.exit(1)
 
   input_parameters = input_json.get('parameters')
