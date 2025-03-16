@@ -1,31 +1,30 @@
-# Wazuh Live Response (WLR)
-Wazuh Live Response (WLR) is a Python-based module that enhances Wazuh by integrating external security solutions for better threat detection and incident response. It includes a structured framework for automated correlation and response, with the following components:
+# C-LiveResponse (C-LR)
+[![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
+[![Changelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](./CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue)](./CHANGELOG.md)
 
-- **correlation/** contains rule modules that analyze collected Wazuh alerts to identify potential threats.
-- **response/** defines action modules that execute specific responses when a threat is detected.
-- **utils/** provides integrations with databases, APIs, and external services to enrich detections.
-- **custom-xdr** orchestrates the correlation and response modules, dynamically managing detection and response workflows.
-- **endpoint/** contains the executables that perform actions on Windows and Linux endpoints.
+C-LiveResponse (C-LR) leverages Wazuh's architecture to execute remote actions on endpoints while providing a **modular system** for **automated correlation and response**, seamlessly integrating with external security solutions to enhance **threat detection and incident response**.
 
-## Setup
-To install Wazuh Live Response (WLR), initialize a Git repository inside the /var/ossec/integrations/ directory and pull the latest version. This method ensures that the module files are placed directly in the integrations folder rather than inside a subdirectory.
-```sh
-cd /var/ossec/integrations/
-git init
-git remote add origin https://github.com/lr2t9iz/wazuh-live-response.git
-git pull origin main
-```
+## Features
+- **Endpoint Isolation & Remote Command Execution (Shell).**
+- **External API Integration** – Allows interaction with external security solutions with Wazuh Integration.
+- **Auditing & Tracking** – Logs all actions for traceability.
 
-## Requirements
-```sh
-cd /var/ossec/integrations/
-/var/ossec/framework/python/bin/pip3 install --upgrade pip
-/var/ossec/framework/python/bin/pip3 install -r requirements.txt
-```
+## Planned Modules (To-Do)
+- ✅ **Windows Isolation**
+- ⏳ **Windows Shell** *(In Progress - Testing)*
+- 🔜 **Modular XDR with Wazuh Integration** *(Planned)*
+- 🔜 **Linux Isolation** *(Future Feature)*
+- 🔜 **Linux Shell** *(Future Feature)*
 
-## Usage
-### Repository wiki
-The complete documentation is available in the [wiki](https://github.com/lr2t9iz/wazuh-live-response/wiki/)
+## Documentation  
+- [View Documentation](./docs/)
 
-# References
-- https://documentation.wazuh.com/current/user-manual/manager/integration-with-external-apis.html
+## Contributions
+Contributions from the community are welcome, whether through suggestions, improvements, or new integrations.
+
+## Disclaimer
+This project is **not an official Wazuh product**.
+
+## License
+Released under the **[MIT License](./LICENSE)**.

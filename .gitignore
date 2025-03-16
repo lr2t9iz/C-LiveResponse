@@ -1,13 +1,5 @@
 t3mp/
 
-# wazuh integrations
-maltiverse
-maltiverse.py
-pagerduty
-pagerduty.py
-shuffle
-shuffle.py
-slack
-slack.py
-virustotal
-virustotal.py
+# PyInstaller Files
+isolation.spec
+build/
