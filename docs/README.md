@@ -1,5 +1,6 @@
-# Wazuh Live Response (WLR)
-Wazuh Live Response (WLR) is a Python-based module that enhances Wazuh by integrating external security solutions for better threat detection and incident response. It includes a structured framework for automated correlation and response.
+# C-LiveResponse (C-LR)
+C-LiveResponse leverages Wazuh's architecture to execute remote actions on endpoints while providing a **modular system** for **automated correlation and response**, seamlessly integrating with external security solutions to enhance **threat detection and incident response**.
 
-## Repository wiki
-The complete documentation is available in the [wiki](https://github.com/lr2t9iz/wazuh-live-response/wiki/)
+## Usage
+- endpoint
+    - [C-LR Isolation](./endpoint/C-LR%20Isolatation.md)
