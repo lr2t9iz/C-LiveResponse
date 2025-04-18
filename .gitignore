@@ -1,5 +1,5 @@
 t3mp/
 
 # PyInstaller Files
-isolation.spec
 build/
+*.spec
