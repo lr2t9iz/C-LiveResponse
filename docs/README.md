@@ -3,4 +3,4 @@ C-LiveResponse leverages Wazuh's architecture to execute remote actions on endpo
 
 ## Usage
 - endpoint
-    - [C-LR Isolation](./endpoint/C-LR%20Isolatation.md)
+    - [C-LR Isolation](./endpoint/isolation.md)
